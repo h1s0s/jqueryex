@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 예제</h1>
+</body>
+		<script type="text/javascript">
+			//typeof는 자료형을 알려주는 연산자
+			console.log("************타입 확인************");
+			console.log(typeof 1);//콘솔.log라는 함수, println같은 기능 typeof라는 연산자
+			console.log(typeof 1.5);
+			console.log(typeof '한');//char이 아닌 string 타입임
+			console.log(typeof "안녕하세요");
+			console.log(typeof (6>5));
+			console.log(typeof (6<5));
+			console.log("*******기본 데이터 타입 number, string, boolean*******");
+		</script>
+		<script type="text/javascript">
+			console.log("************사칙연산************");
+			console.log(13+5); //18
+			console.log(13-5); //8
+			console.log(13*5); //2.6
+			console.log(13/5); //2
+			console.log(13%5); //3
+
+			console.log(5+3*2); //11 곱셈 우선
+			console.log((5+3)*2); //16
+			
+			console.log(13+5.2); //18.2
+		</script>
+		<script type="text/javascript">
+			console.log("************이스케이프문자************");
+			console.log("동해물과 백두산이");
+			console.log("동해물과 백두산이");
+			
+			console.log("동해물과\'백두산\'이");
+			console.log("동해물과'백두산'이");
+			
+			console.log("동해물과\"백두산\"이");
+			console.log('동해물과"백두산"이');
+			
+			console.log("동해물과\n백두산이");
+			
+			console.log("동해물과\t백두산이");
+			
+			console.log("동해물과"+"1234"+"백두산이");
+			console.log("동해물과"+1234+"백두산이");//number형이 string형으로 강제 형변환 됨
+			console.log("동해물과"+동해물+"백두산이");
+		</script>
+		<script type="text/javascript">
+			console.log("************불린형************");
+			console.log(52>273);
+			console.log(52<273);
+			console.log(52!=273);
+			console.log(52=273);
+		</script>
+</html>
