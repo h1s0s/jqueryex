@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 예제</h1>
+</body>
+<script type="text/javascript">
+	//함수 실행, 정의하기 전인데도 실행이 된다. 브라우저가 해석 할때 함수 정의를 메모리에 올렸다.
+	//기명 함수만 가능
+	testA();
+	//함수 정의
+	//a. 기명 함수, 이름이 있는 함수 --> 정의된 부분이 해석 된다.
+	function testA() {
+		console.log("testA() 기명함수 실행");
+	}
+	//함수 실행
+	testA();
+	//////////////////////////////////////////////////////////////////////
+	//b.익명 함수. 이름이 없는 함수
+	//변수에 넣어서 사용
+	var testB = function() {
+		console.log("testB() 익명함수 실행");
+	}
+	//함수 실행
+	testB();
+</script>
+</html>
