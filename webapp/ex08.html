@@ -7,13 +7,11 @@
 <body>
 	<h1>자바스크립트 예제</h1>
 	<script type="text/javascript">
-		var inputNum = prompt();
-		if (inputNum === 0) {
-			document.write("0");
-		} else if (inputNum > 0) {
-			document.write("양수");
-		} else {
-			document.write("음수");
+		for (var x = 1; x <= 5; x++) {
+			for (var y = 1; y<=x; y++) {
+				document.write("*");
+			}
+			document.write("<br>");
 		}
 	</script>
 </body>
