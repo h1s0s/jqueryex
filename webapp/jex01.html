@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script><!-- src="/프로젝트명(webapp에서부터)/폴더/파일명" , 경로 틀리면 $ is not defined라는 에러가 뜸 -->
+</head>
+<body>
+	<div>
+		<button id="btn" type="button">js 테스트</button>
+		<h1 id="display">이름출력영역</h1>
+	</div>
+</body>
+<script type="text/javascript">
+	$("#btn").on("click",function(){//"#btn" #은 id, $("")는 document.getElementById의 약어, on(이벤트, 할일) 이벤트에는 드래그할때, 클릭, 마우스 올렸을때 등의 조건이 있음
+		console.log("클릭");
+		$("#display").html("<font color='red'>홍길동</font>");//선택한 태그의 코드를 바꿔줌
+	})
+</script>
+</html>
