@@ -13,5 +13,16 @@
 	</div>
 
 </body>
-
+	<script type="text/javascript">
+	//window.onload, 브라우저가 로드 됐을때, 윈도우가 켜졌을때
+		window.onload = function(){
+			var testButton = document.getElementById("btn");//document 내의 id가 "btn"인 애의 요소를 가져온다
+			var testArea = document.getElementById("display");
+			testButton.onclick = function(){//testButton이라는 변수에 onclick이라는 필드를 정의
+				console.log("버튼 클릭");
+				//id=display 영역
+				testArea.innerHTML = '<font color="red">홍길동<font>';//이 아이디에 해당하는 태그를 바꿔치기, "쌍따옴표" 안에 문자열은 '홑따옴표'
+			};
+	};
+	</script>
 </html>

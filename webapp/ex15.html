@@ -5,6 +5,40 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>자바스크립트 예제</h1>
 </body>
+<script type="text/javascript">
+	//객체를 배열에 넣어 관리하기
+	var personList = [];
+	
+	//personVo 3가지 방법으로 데이터 추가
+	var personVo01 = {
+		name: "정우성",
+		hp: "010-111-1111",
+		company: "02-111-1111"
+	};	
+	
+	var personVo02 = {};
+	personVo02.name = "이효리";
+	personVo02.hp = "010-222-2222";
+	personVo02.company = "02-222-2222";	
+	
+	var personVo03 =  {
+		name: "유재석",
+		hp: "010-333-3333"
+	}
+	personVo03.company = "02-333-3333"
+	
+	//배열에 vo 추가
+	personList.push(personVo01);
+	personList.push(personVo02);
+	personList.push(personVo03);
+	
+	console.log(personList);
+	
+	//반복문으로 name만 출력
+	for(var i=0; i<personList.length; i++){
+		console.log(personList[i].name)
+	}
+</script>
 </html>
