@@ -10,13 +10,31 @@
 	<ul>
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
-		<li id="third" class="del">세번째아이템입니다.</li>
+		<li id="third" class="del">세번째 아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
 		
 	</ul>
 
 </body>
-
-
-
+<script type="text/javascript">
+	$("#first").on("click", function(){
+		var str = $("#first").text();
+		console.log(str);
+	});
+	
+	//객체조작 $(this) : 현재 클릭한 엘리먼트
+	//this는 태그 1개를 객체 한개로 봄
+	//attr("속성") : 어트리뷰트, 속성값을 꺼내온다.
+/* 	$("li").on("click", function(){
+		var tag = $(this);
+		var tagId = tag.attr("id")
+		console.log(tagId);
+	}); */
+	$("li").on("click", function(){
+		var tag = $(this);
+		tag.text("한상선");
+	});
+	
+	
+</script>
 </html>
