@@ -12,22 +12,25 @@
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
 		<li id="third" class="del">세번째 아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
-		
 	</ul>
 	<button id="btn" type="button">li태그 추가버튼</button>
 </body>
 <script type="text/javascript">
-/* 	//버튼을 클릭하여 li요소 추가
+ 	//버튼을 클릭하여 li요소 추가
 	$("#btn").on("click",function(){
 		$("ul").append("<li> 다섯번째 아이템입니다.</li>");
 		$("ul").append("<li> 여섯번째 아이템입니다.</li>");
 		$("ul").append("<li> 일곱번째 아이템입니다.</li>");
-	}); */
+	}); 
+
+	//클릭은 로딩시 미리 준비해 놓음, 클릭을 눌러서 생성되는 아이는 그 이후에 생성됨
+
 	//클릭하면 그 앞에 추가
-		$("li").on("click",function(){
+		$("ul").on("click","li",function(){//너가 받고 이벤트는 "li" 얘 줘
 			console.log($(this).text());
 		});
 	//tip. $this를 담을때는 변수에 $를 붙이는게 유행
+	
 </script>
 
 </html>
