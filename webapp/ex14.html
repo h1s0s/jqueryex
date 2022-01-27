@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 예제</h1>
+</body>
+<script type="text/javascript">
+	var bean = {}//js에서는 빈 객체를 만들수 있다
+	bean.name = "이름";
+	
+	//객체 내부의 순서가 펑션은 가장 아래로 감
+	var guestbookVo = {
+		no: 1,
+		name: "황일영",
+		password: "1234",
+		content: "첫 방문입니다",
+		showInfo: function(){
+			console.log(this.no+","+this.name+","+this.password+","+this.content)}
+	};
+	//console.log(guestbookVo);
+	
+	console.log(guestbookVo.no);
+	console.log(guestbookVo.name);
+	console.log(guestbookVo.password);
+	console.log(guestbookVo.content);
+	
+	guestbookVo.regDate = "2022-01-27";
+	console.log(guestbookVo.showInfo());
+	
+	console.log("===================");
+	var personVo = {}
+	console.log(personVo);
+	
+	personVo.no = 1;
+	personVo.name = "유재석";
+	personVo.hp = "010-000-0000";
+	personVo.company = "02-000-0000";
+	console.log(personVo);
+	
+	console.log(personVo.name);
+	console.log(personVo["name"]);
+	
+	
+</script>
+</html>
